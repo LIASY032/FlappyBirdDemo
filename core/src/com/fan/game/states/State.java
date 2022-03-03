@@ -1,22 +1,21 @@
-package com.fan.game.State;
+package com.fan.game.states;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 
 public abstract class State {
     protected OrthographicCamera cam;
 
-protected GameStateManager gam;
+    protected GameStateManager gsm;
     protected Vector3 mouse;
 
 
 
 
-    protected  State(GameStateManager gam){
+    protected  State(GameStateManager gsm){
 
-        this.gam = gam;
+        this.gsm = gsm;
 cam = new OrthographicCamera();
 
 mouse = new Vector3();

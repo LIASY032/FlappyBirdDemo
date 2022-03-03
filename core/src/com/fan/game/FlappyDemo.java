@@ -5,8 +5,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
-import com.fan.game.State.GameStateManager;
-import com.fan.game.State.MenuState;
+import com.fan.game.states.GameStateManager;
+import com.fan.game.states.MenuState;
 
 public class FlappyDemo extends ApplicationAdapter {
 	public static final int WIDTH = 480;
@@ -21,7 +21,7 @@ public class FlappyDemo extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		gsm = new GameStateManager();
-//		img = new Texture("badlogic.jpg");
+		img = new Texture("badlogic.jpg");
 
 		gsm.push(new MenuState(gsm));
 

@@ -1,4 +1,4 @@
-package com.fan.game.State;
+package com.fan.game.states;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -17,9 +17,9 @@ public class MenuState extends State{
 
     @Override
     public void handleInput() {
-//        if(Gdx.input.justTouched()){
-//            gsm.set(new PlayState(gsm));
-//        }
+        if(Gdx.input.justTouched()){
+            gsm.set(new PlayState(gsm));
+        }
     }
 
     @Override
